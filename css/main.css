@@ -1,0 +1,485 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@font-face {
+    font-family: "Archangelsk";
+    src: url("../fonts/Archangelsk.ttf");
+}
+
+:root {
+    --main-black: #000;
+    --yellow: #F8F200;
+    
+    --text-color: var(--main-black);
+}
+
+
+html, body {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* --------------------HEADER------------------ */
+
+.header {
+    min-height: 1000px;
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url('../images/background/header-bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    animation: changing 10s infinite;
+}
+
+@keyframes changing {
+    0% {
+        background-image: url('../images/background/header-bg1.jpg');
+    }
+    35% {
+        background-image: url('../images/background/header-bg2.jpg');
+    }
+    68% {
+        background-image: url('../images/background/header-bg3.jpg');
+    }
+}
+
+.header__wrapper {
+    position: relative;
+
+    width: 1310px;
+    padding: 0 15px;
+}
+
+/*----------------HEADER HEAD-------------------*/
+
+.header__row {
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    width: 295.991px;
+    height: 73.489px;
+}
+
+.row-sotial {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.header__learn-more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 624px;
+    height: 369px;
+    margin-right: 15px;
+
+    background-image: url('../images/background/yellow-back.svg');
+    background-repeat: no-repeat;
+
+}
+
+.learn-more__text {
+    width: 485px;
+    margin: 70px 70px 44px 70px;
+
+    font-family: 'Archangelsk';
+    font-size: 62px;
+    font-weight: 400;
+}
+
+/* -----------------BUTTON--------------- */
+
+.learn-more__link {
+    padding: 19px 50px;
+    margin-left: 70px;
+
+    background-color: var(--main-black);
+
+    color: var(--yellow);
+    font-size: 24px;
+    font-weight: 700;
+
+    transition: opacity 0.3s ease-in;
+}
+
+.learn-more__link:hover {
+    opacity: 0.8;
+}
+
+.learn-more__link:active {
+    position: relative;
+    top: 2px;
+}
+
+/* -----------------GENERAL----------------- */
+
+.main {
+    padding: 70px 0 0 0 ;
+}
+
+.container {
+    max-width: 1310px;
+    width: auto;
+
+    padding: 0 15px;
+    margin:  0 auto;
+}
+
+.dividing-strip {
+    height: 70px;
+
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* -------------GAME DESCRIPTION------------- */
+
+.game-description {
+}
+
+/* -------------------ABOUT GAME-------------------- */
+
+.game-description__title-1 {
+    margin-bottom: 25px;
+
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.game-description__text {
+    max-width: 952px;
+
+    color: #777;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.game-description__text em {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #52BEDC;
+}
+
+.game-description__text p + p {
+    margin-top: 0.5em;
+}
+
+/* -----------------SCREENSHOTS---------------- */
+
+.game-description__screenshot-group {
+    margin: 70px 0 70px 0;
+
+    display: grid;
+    grid-template-columns: 460px auto;
+    align-items: center;
+    column-gap: 32px;
+}
+
+
+.screenshot-group__screenshot {
+
+}
+
+.screenshot-group-little {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+
+.screenshot-little {
+}
+
+/* .screenshot-big {
+    width: 788px;
+    max-width: 100%;
+} */
+
+
+/* ----------------DIVIDING STRIP--------------------- */
+
+.dividing-strip-white-dark{
+    background-image: url('../images/background/white-dark-line.png');
+}
+
+/* --------------RAFFLE PRIZES---------------*/
+
+.raffle-prizes {
+    color: #fff;
+    background-color: #000;
+}
+
+.raffle-prizes__wrapper {
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    gap: 25px 32px;
+    align-items: center;
+    grid-template-areas: 
+        "about about"
+        "form picture";
+
+}
+
+.raffle-prizes__about-promotion {
+    grid-area: about;
+}
+
+/* ----------ABOUT PROMOTION-------------*/
+
+.raffle-prizes__about-promotion {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about-promotion__item {
+    margin-bottom: 25px;
+}
+
+.about-promotion__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.about-promotion__logo {
+}
+
+.about-promotion__title-2 {
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.about-promotion__text {
+    max-width: 952px;
+
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.about-promotion__text p + p{
+    margin-top: 0.5em;
+}
+
+.about-promotion__text em {
+    color: #52BEDC;
+}
+
+/* ------------PRIZES FORM---------------*/
+
+.raffle-prizes__form {
+    max-width: 460px;
+
+    grid-area: form;
+}
+
+.form-body {
+}
+
+.form-body__item {
+    margin-bottom: 35px;
+}
+
+.form-body__item:last-child {
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+.form-body__input {
+    width: 100%;
+
+    border-bottom: 1px solid #777;
+    padding-bottom: 13px;
+
+    font-weight: 300;
+}
+
+.form-body__file {
+    position: relative;
+
+    width: 100%;
+    max-width: 460px;
+    height: 120px;
+
+    background-image: url('../images/main/pin-file.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.form-body__file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    font-size: 0;
+}
+
+.file-input__about-file {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-file__text {
+    text-align: center;
+
+
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration-line: underline;
+}
+
+.about-file__extension {
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.form-body__button {
+    padding: 15px 50px;
+
+    background: #F8F200;
+
+    color: #000;
+    font-weight: 700;
+
+    transition: opacity 0.3s ease-in;
+}
+
+.form-body__button:hover {
+    opacity: 0.8;
+}
+
+.form-body__button:active {
+    position: relative;
+    top: 2px;
+}
+
+.form-body__checkbox {
+
+}
+
+.checkbox-label {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* -----------PRIZES PICTURE-GROUP---------------- */
+
+.raffle-prizes__picture-group {
+    grid-area: picture;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.picture-group__item-top {
+    grid-column: 1 / span 7;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.picture-group__item-bottom {
+    grid-column: 6 / span 12;
+    grid-row: 1;
+
+}
+
+.raffle-prizes__picture {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ----------------------MEDIA------------------------- */
+
+@media (max-width: 1023px) {
+
+    /* --------------------GENERAL------------------ */
+
+    .container {
+        max-width: 1054px;
+        width: auto;
+    
+        padding: 0 15px;
+        margin:  0 auto;
+    }
+
+    /* ------------------SCREENSHOT------------------ */
+
+    .game-description__screenshot-group {
+        grid-template-columns: auto;
+        column-gap: 0;
+        row-gap: 32px;
+    }
+
+    .screenshot-group__screenshot {
+    }
+
+    .screenshot-group-little {
+        width: 48%;
+
+        flex-wrap: nowrap;
+        row-gap: 0;
+        column-gap: 32px;
+    }
+
+    .screenshot-big {
+        width: 952px;
+        max-width: 100%;
+    }
+}
+
+/* @media (max-width: 320px) {
+    .game-description__screenshot-group {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 952px));
+        column-gap: 0;
+        row-gap: 32px;
+    }
+
+    .screenshot-group-little {
+        column-gap: 32px;
+    }
+
+    .screenshot {
+        width: 320px;
+        max-width: 100%;
+    }
+} */
+
+
+
+
