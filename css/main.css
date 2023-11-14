@@ -370,7 +370,7 @@ html, body {
 .form-body__button {
     padding: 15px 50px;
 
-    background: #F8F200;
+    background: red;
 
     color: #000;
     font-weight: 700;
