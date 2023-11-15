@@ -238,6 +238,8 @@ html, body {
         "about about"
         "form picture";
 
+    padding-bottom: 73px;
+
 }
 
 .raffle-prizes__about-promotion {
@@ -293,6 +295,9 @@ html, body {
 
 .raffle-prizes__form {
     max-width: 460px;
+    height: 456px;
+
+    padding-top: 73px;
 
     grid-area: form;
 }
@@ -467,6 +472,11 @@ html, body {
 .raffle-prizes__picture {
     max-width: 100%;
     height: auto;
+}
+
+/*------------------DIVIDING STRIP YELLOW DARK-------------*/
+.dividing-strip-yellow-dark {
+    background-image: url('../images/background/yellow-dark-line.png');
 }
 
 
