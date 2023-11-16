@@ -449,6 +449,10 @@ html, body {
     font-weight: 300;
 }
 
+.checkbox__text a {
+    color: #F8F200;
+}
+
 /* -----------PRIZES PICTURE-GROUP---------------- */
 
 .raffle-prizes__picture-group {
@@ -477,9 +481,12 @@ html, body {
 }
 
 /*------------------DIVIDING STRIP YELLOW DARK-------------*/
+
 .dividing-strip-yellow-dark {
     background-image: url('../images/background/yellow-dark-line.png');
 }
+
+/**/
 
 
 /* ----------------------MEDIA------------------------- */
