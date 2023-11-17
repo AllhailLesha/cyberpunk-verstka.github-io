@@ -595,46 +595,85 @@ html, body {
     grid-template-areas: 
         "picture about-game";
 }
+
 .buy-game__wrapper {
     padding: 0 16px 0 15px;
 
     color: #fff;
     background-color: #000;
 }
+
 .buy-game__about-game {
     max-width: 624px;
 
     grid-area: about-game;
 }
+
 .about-game__title {
     font-family: Archangelsk;
     font-size: clamp(30px, 5vw, 62px);
     font-weight: 400;
 }
+
 .about-game__game-set {
+
 }
 .game-set__item {
 }
-.game-set__title {
-}
+
 .game-set__set-element-group {
 }
+
 .set-element-group__title {
+    color: #52BEDC;
+    font-size: 24px;
+    font-weight: 700;
 }
+
 .set-element-group__set-element {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
 }
 .set-element__picture {
 }
 .set-element__text {
+    font-weight: 400;
 }
+
 .game-set__platform-group {
 }
+
 .platform-group__title {
+    color: #52BEDC;
+    font-size: 24px;
+    font-weight: 700;
 }
-.platform-group__platform-item {
+
+.platform-group__picture-group {
 }
-.platform-item__picture {
+
+.picture-group__picture {
+
 }
+
+.picture-group__picture-1 {
+
+}
+
+.picture-group__picture-2 {
+    
+}
+
+.picture-group__picture-3 {
+    
+}
+
+.picture-group__picture-4 {
+    
+}
+
 .buy-game__game-picture {
     grid-area: picture;
 
@@ -642,6 +681,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 
 /*------------------ADVERTISING BUTTON---------------*/
