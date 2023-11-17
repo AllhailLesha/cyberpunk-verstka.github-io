@@ -588,6 +588,54 @@ html, body {
     margin-right: 10px;
 }
 
+/* ------------------ BUY GAME----------------*/
+.buy-game {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "picture about-game";
+}
+.buy-game__wrapper {
+
+}
+.buy-game__about-game {
+    grid-area: about-game;
+}
+.about-game__title {
+}
+.about-game__game-set {
+}
+.game-set__item {
+}
+.game-set__title {
+}
+.game-set__set-element-group {
+}
+.set-element-group__title {
+}
+.set-element-group__set-element {
+}
+.set-element__picture {
+}
+.set-element__text {
+}
+.game-set__platform-group {
+}
+.platform-group__title {
+}
+.platform-group__platform-item {
+}
+.platform-item__picture {
+}
+.buy-game__game-picture {
+    grid-area: picture;
+
+    background-image: url("../images/background/cd-game.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /*------------------ADVERTISING BUTTON---------------*/
 
 .advertising__link {
