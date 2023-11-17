@@ -596,12 +596,20 @@ html, body {
         "picture about-game";
 }
 .buy-game__wrapper {
+    padding: 0 16px 0 15px;
 
+    color: #fff;
+    background-color: #000;
 }
 .buy-game__about-game {
+    max-width: 624px;
+
     grid-area: about-game;
 }
 .about-game__title {
+    font-family: Archangelsk;
+    font-size: clamp(30px, 5vw, 62px);
+    font-weight: 400;
 }
 .about-game__game-set {
 }
