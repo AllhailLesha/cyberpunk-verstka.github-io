@@ -96,12 +96,11 @@ html, body {
 
 }
 
-.learn-more__text {
+.learn-more__title {
     width: 485px;
     margin: 70px 70px 44px 70px;
 
     font-family: 'Archangelsk';
-    font-size: 62px;
     font-weight: 400;
 }
 
@@ -150,6 +149,10 @@ html, body {
     background-size: auto;
 }
 
+.title {
+    font-size: clamp(30px, 5vw, 62px);
+}
+
 /* -------------GAME DESCRIPTION------------- */
 
 .game-description {
@@ -161,7 +164,6 @@ html, body {
     margin-bottom: 25px;
 
     font-family: Archangelsk;
-    font-size: 62px;
     font-weight: 400;
 }
 
@@ -274,7 +276,6 @@ html, body {
     padding-bottom: 14px;
 
     font-family: Archangelsk;
-    font-size: 62px;
     font-weight: 400;
 }
 
@@ -546,7 +547,6 @@ html, body {
     margin-bottom: 25px;
 
     font-family: Archangelsk;
-    font-size: clamp(30px, 5vw, 62px);
     font-weight: 400;
 }
 
@@ -605,13 +605,15 @@ html, body {
 
 .buy-game__about-game {
     max-width: 624px;
+    margin: 70px 0 70px 32px;
 
     grid-area: about-game;
 }
 
 .about-game__title {
+    margin-bottom: 25px;
+
     font-family: Archangelsk;
-    font-size: clamp(30px, 5vw, 62px);
     font-weight: 400;
 }
 
@@ -622,6 +624,10 @@ html, body {
 }
 
 .game-set__set-element-group {
+    display: grid;
+    gap: 15px;
+
+    margin-bottom: 70px;
 }
 
 .set-element-group__title {
@@ -636,8 +642,10 @@ html, body {
     align-items: center;
     column-gap: 10px;
 }
+
 .set-element__picture {
 }
+
 .set-element__text {
     font-weight: 400;
 }
@@ -646,12 +654,17 @@ html, body {
 }
 
 .platform-group__title {
+    margin-bottom: 25px;
+
     color: #52BEDC;
     font-size: 24px;
     font-weight: 700;
 }
 
 .platform-group__picture-group {
+    display: grid;
+    grid-template-columns:62px 1fr;
+    gap: clamp(40px, 10vw, 49px) clamp(56px, 5vw, 79px)  ;
 }
 
 .picture-group__picture {
@@ -681,6 +694,45 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* --------------FOOTER---------------*/
+
+.footer {
+
+}
+
+.footer-grid {
+
+}
+
+.footer__logo-group {
+
+}
+
+.footer__logo {
+}
+
+.footer__nav {
+
+}
+
+.nav__list {
+}
+
+.nav__item {
+}
+
+.copyright {
+    display: block;
+
+    background-color: #000;
+    
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
 
 
 
@@ -722,6 +774,7 @@ html, body {
         padding: 0 15px;
         margin:  0 auto;
     }
+
 
     /* ------------------SCREENSHOT------------------ */
 
